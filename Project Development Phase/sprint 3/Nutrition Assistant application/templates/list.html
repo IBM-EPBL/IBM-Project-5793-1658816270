@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+   <body>
+
+    <a href="/">HOME</a>
+    <a href="/addstudent">Add New Student</a>
+    <a href="/list">List Student</a>
+    <br><hr>
+
+    {{ msg }}
+
+      <table border = 1>
+         <thead>
+            <td>Email</td>
+            <td>Password</td>
+         </thead>
+         {% for row in login %}
+            <tr>
+               <td>{{row["EMAIL"]}}</td>
+               <td> {{ row["PASSWORD"]}}</td>	
+               <td><a href="/delete/{{row['NAME']}}">Delete</a></td>	
+            </tr>
+         {% endfor %}
+      </table>
+     
+
+   </body>
+</html>
