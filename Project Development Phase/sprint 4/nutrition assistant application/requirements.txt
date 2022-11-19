@@ -1,0 +1,9 @@
+ibm_db
+flask
+pathlib
+requests
+sendgrid
+pandas
+google-auth
+google-auth-oauthlib
+gunicorn
