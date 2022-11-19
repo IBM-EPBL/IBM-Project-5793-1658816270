@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SIGN UP</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/signup.css') }}"/>
+
+</head>
+<body>
+
+<div class="header">
+  <h1>FIRST STEP IN YOUR HEALTH PROCESS</h1>
+</div>
+<div  class="topnav">
+  <a href="#">PERSONAL DETAILS</a>
+</div>
+<div  class="wrapper">
+  <h1>Nutrient Assist...!</h1>
+  <form>
+   <fieldset  class="field">
+    <legend>PERSONAL</legend>
+	<img src="https://flaskimagebucket.s3.jp-tok.cloud-object-storage.appdomain.cloud/icon/profile.jpg" href="" style="text-align:right; border-style:inset; border-color:#66ff00; border-radius:10px;" width="100px" height="100px"/><br><br>
+	<table  align="center">
+	<tr><td align="center">
+	<label for="nname">Nick Name:</label></td><td>
+	<input type="text" id="nname" name="nname" placeholder="enter nick name"></td><td>
+	<label for="fname">First Name:</label></td><td>
+	<input type="text" id="fname" name="fname" placeholder="enter first name"></td><td>
+	<label for="lname">Last Name:</label></td><td>
+	<input type="text" id="lname" name="lname" placeholder="enter last name"/></td></tr>
+	<tr></tr><tr><td>
+	<label for="email">Email:</label><td>
+	<input type="email" id="email" name="email" placeholder="   @abc.com "/><td>
+	<label for="pass">Password:</label><td>
+	<input type="password" id="pass" name="pass" placeholder="create password"/><td>
+	<label for="dob">Date Of Birth:</label><td>
+	<input type="date" id="dob" name="dob"/ ></td></tr>
+	<tr><td>
+	<label for="age">Age:</label><td>
+	<input type="number" id="age" name="age" placeholder="enter age" size="3"/><td>
+	<label for="height">Height:</label><td>
+	<input type="number" id="height" name="height" placeholder="in feet"/><td>
+	<label for="weight">Weight:</label><td> 
+	<input type="number" id="weight" name="weight" placeholder="in Kgs"/><td></tr>
+    <tr><td><h3>Gender:</h3></td><td>
+	<input type="radio" id="male" name="gender" />
+	<label for="male">Male</label><img src="https://flaskimagebucket.s3.jp-tok.cloud-object-storage.appdomain.cloud/icon/male.png" width="50px" height="50px"/></td>
+	
+	<td><input type="radio" id="female" name="gender"/>
+	<label for="female">Female</label><img src="https://flaskimagebucket.s3.jp-tok.cloud-object-storage.appdomain.cloud/icon/female.png" width="50px" height="50px"/></td>
+	
+	<td><input type="radio" id="" name="gender"/>
+	<label for="trans">Transgender</label></td><td style="text-align:left;"><img src="https://flaskimagebucket.s3.jp-tok.cloud-object-storage.appdomain.cloud/icon/trans.jpg" width="80px" height="80px"/></td>
+	</table>
+   </fieldset>
+  </form>
+</div>
+<!--------second---->
+<div class="topnav">
+  <a href="#">PROFILE</a>
+</div>
+<div class="wrapper">
+  <h1>PROFILE DETAILS..!</h1>
+  <form>
+   <fieldset style="text-shadow: 2px 2px 5px blue;" class="field">
+    <legend>FOOD TYPE</legend>
+	   <h2>Please select at least one....!</h2>
+	   <table class="check"  align="center">
+	   <tr><td>
+       <input type="checkbox" name="vegan"/ >
+	   <label class="container">VEGAN</label></td><td>
+	   <input type="checkbox" name="vegetarian"/>
+       <label class="container">VEGETARIAN</label></td><td>
+	   <input type="checkbox" name="eggs"/>
+       <label class="container">EGGS</label></td><td>
+	   <input type="checkbox" name="chicken"/>
+       <label class="container">CHICKEN</label></td></tr>
+	   <td>
+	   <input type="checkbox" name="lamb"/>
+	   <label class="container">LAMB </label></td><td>
+	   <input type="checkbox" name="fish"/>
+	   <label class="container">FISH </label></td></tr>
+       <tr><td>
+	   <input type="checkbox" name="other"/>
+	   <label for="other">Other:</label>
+	   <input style="width:60%;" type="text" id="other" name="other" placeholder="Mension"/></td></tr>
+	   </table>
+   </fieldset>
+   <br>
+   <br>
+   <fieldset style="text-shadow: 2px 2px 5px yellow;" class="field">
+    <legend>Allergies</legend>
+	<table class="check"  align="center"><tr><td>
+       <input type="checkbox" name="eggs"/>
+	   <label class="container">EGGS </label></td><td>
+	   <input type="checkbox" name="milk"/>
+       <label class="container">MILK</label></td><td>
+	   <input type="checkbox"name="nuts"/>
+       <label class="container">NUTS</label></td><td>
+	   <input type="checkbox" name="shellfish"/>
+       <label class="container">SHELLFISH</label></td></tr>
+	   <tr><td>
+	   <input type="checkbox" name="soy"/>
+	   <label class="container">SOY </label></td><td>
+	   <input type="checkbox" name="wheat"/>
+	   <label class="container">WHEAT(GLUTEN)</label></td></tr>
+	   <tr><td>
+	   <input type="checkbox" name="other"/>
+	   <label for="other">Other:</label>
+	   <input style="width:60%;" type="text" id="other" name="other" placeholder="Mension"/></td></tr></table>
+   </fieldset>
+   <br>
+   <br>
+   <fieldset class="field" style="text-shadow: 2px 2px 5px darkgreen;">
+    <legend>CONDITIONS</legend>
+	<table class="check"  align="center"><tr><td>
+       <input type="checkbox" name="arthritis"/>
+	   <label class="container">ARTHRITIS</label></td><td>
+	   <input type="checkbox" name="bph"/>
+       <label class="container">BLOOD &nbsp PRESSURE &nbsp HIGH</label></td><td>
+	   <input type="checkbox" name="bpl"/>
+       <label class="container">BLOOD &nbsp PRESSURE &nbsp LOW</label></td></tr>
+	   <tr><td>
+	   <input type="checkbox"name="cholestrol"/>
+       <label class="container">CHOLESTROL</label></td><td>
+	   <input type="checkbox" name="type1"/>
+	   <label class="container">TYPE &nbsp 1 &nbsp DIABETES</label></td><td>
+	   <input type="checkbox" name="type2"/>
+	   <label class="container">TYPE &nbsp 2 &nbsp DIABETES</label></td></tr>
+       
+	   <tr><td>
+	   <input type="checkbox" name="other"/>
+	   <label for="other">Other:</label>
+	   <input style="width:70%;" type="text" id="other" name="other" placeholder="Mension"/></td></tr></table>
+	</fieldset>
+	<br>
+	<br>
+   <br>
+   <fieldset class="field" style="text-shadow: 2px 2px 5px #8a2be2;">
+    <legend>PRIMARY &nbsp GOAL</legend>
+	<table class="check"  align="center"><tr><td>
+       <input type="radio" id="loss" name="primary"/>
+	   <label class="container">Weight &nbsp Loss</label></td><td>
+	   <input type="radio" id="maintain" name="primary"/>
+       <label class="container">Maintain &nbsp Weight</label></td><td>
+	   <input type="radio" id="gain" name="primary"/>
+       <label class="container">Weight &nbsp Gain</label></td></tr>
+	</table>
+   </fieldset>
+   <br>
+	<br>
+   <br>
+   <fieldset class="field" style="text-shadow: 2px 2px 5px #7fff00;">
+    <legend>SECONDARY &nbsp GOAL</legend>
+	<table class="check"  align="center">
+	   <h3>Select all type</h3><tr><td>
+       <input type="checkbox" name="bsugar"/>
+	   <label class="container">Reduce &nbsp Blood &nbsp Sugar &nbsp Level</label></td><td>
+	   <input type="checkbox" name="bpressure"/>
+       <label class="container">Reduce &nbsp Blood &nbsp Pressure</label></td><td>
+	   <input type="checkbox" name="stress"/>
+       <label class="container">Reduce &nbsp Stress</label></td></tr>
+	</table>
+   </fieldset>
+   <br>
+	<br>
+   <br>
+   <fieldset class="field" style="text-shadow: 2px 2px 5px #8b4513;">
+    <legend>PHYSICAL &nbsp ACTIVITY &nbsp LEVEL</legend>
+	<table class="check"  align="center"><tr><td>
+       <input type="radio" id="0" name="primary"/>
+	   <label class="container">Sedentary(little or no exercise)</label></td><td>
+	   <input type="radio" id="3" name="primary"/>
+       <label class="container">Light Active(light exercise/sports 1-3 day/week)</label></td><td>
+	   <input type="radio" id="5" name="primary"/>
+       <label class="container">Moderate Active(moderate exercise/sports 3-5 day/week)</label></td></tr><tr><td>
+	   <input type="radio" id="7" name="primary"/>
+       <label class="container">Very Active(hard exercise/sports 6-7 day/week)</label></td><td>
+	   <input type="radio" id="10" name="primary"/>
+       <label class="container">Extra Active(Very Hard exercise/sports & a physical job)</label></td></tr>
+	</table>
+   </fieldset>
+   <br>
+	<br>
+   <br>
+   <fieldset class="field" style="text-shadow: 2px 2px 5px #2e8b57;">
+    <legend>SELECT &nbsp BODY &nbsp SHAPE</legend>
+	<h3>select any one</h3>
+	<img src="https://flaskimagebucket.s3.jp-tok.cloud-object-storage.appdomain.cloud/mimg/pic.png"  align="right"  width="450px" height="450px"/>
+       <div style="text-align:left;" class="radio">
+	   <input type="radio" id="0" name="bodyshape"/>
+	   <label class="container">SUPER FIT</label>
+	   <br><br>
+	   <input type="radio" id="1" name="bodyshape"/>
+	   <label class="container">FIT</label>
+	   <br><br>
+	   <input type="radio" id="2" name="bodyshape"/>
+	   <label class="container">AVERAGE</label>
+	   <br><br>
+	   <input type="radio" id="3" name="bodyshape"/>
+	   <label class="container">BOTTOM</label>
+	   <br><br>
+	   <input type="radio" id="4" name="bodyshape"/>
+	   <label class="container">CENTRAL</label>
+	   </div>
+   </fieldset>
+   <div align="center" class="container">
+	<a href="{{ url_for('index') }}">HELLO</a>
+  </div>
+</form>
+<br>
+    <script type="text/javascript">
+        const btn = document.querySelector("#btn");
+        const btnText = document.querySelector("#btnText");
+
+        btn.onclick = () => {
+            btnText.innerHTML = "Thank You!";
+            btn.classList.add("active");
+        };
+    </script>
+</body>
+</html>
