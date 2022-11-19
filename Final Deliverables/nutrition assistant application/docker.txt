@@ -1,3 +1,0 @@
-docker push icr.io/<my_namespace>/<my_repo>
-
-docker tag <local_image> icr.io/<my_namespace>/<my_repo>
